@@ -1,0 +1,20 @@
+{
+  "name": "reactjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "npm run build",
+    "build": "webpack -d & copy src/index.html dist/index.html & webpack-dev-server --content-base src/ --inline --watch",
+    "build:prod": "webpack -p & copy src/index.html dist/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
+}
